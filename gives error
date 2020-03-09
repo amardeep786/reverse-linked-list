@@ -1,0 +1,16 @@
+void reverse()
+    {struct Node *prev,*next,*current;
+    prev= NULL;
+    next= Start;
+    current=Start;
+    while(next!=NULL)
+    {
+	
+    next=next->link;
+    current->link=prev;
+    prev=current;
+    current=next;
+	}
+	Start=prev;
+	viewList();
+	}
